@@ -2,26 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Todo App</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO LIST</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/d5f22ee4f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Todo App</h1>
-  <div class="todo-container">
-    <div class="input-section">
-      <input type="text" placeholder="Enter task..." />
-      <button class="add-btn">Add</button>
-    </div>
-
-    <div class="task">
-      <div class="task-name">Task-1</div>
-      <div class="task-buttons">
-        <button class="icon-btn" title="Complete">✔️</button>
-        <button class="icon-btn" title="Edit">📝</button>
-        <button class="icon-btn" title="Delete">🗑️</button>
+  <div class="container">
+    <div class="task-box">
+      <h1 class="title">TODO LIST</h1>
+      <div class="input-area">
+        <input type="text" id="todo-input" placeholder="Add a task..." />
+        <button id="submit">Create</button>
       </div>
+      <div class="task-list"></div>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
